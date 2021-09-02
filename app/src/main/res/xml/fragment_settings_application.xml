@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout="@layout/fragment_empty"
+    >
+
+    <PreferenceCategory
+        app:key="app"
+        app:title="Application">
+
+        <SwitchPreferenceCompat
+            app:key="enable_dark_mode"
+            app:title="Giao diện tối" />
+
+        <SwitchPreferenceCompat
+            app:key="enable_notification"
+            app:title="Bật/ Tắt thông báo" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="dev"
+        app:title="Development">
+
+        <PreferenceScreen
+            android:key="sub_preferences"
+            app:title="Thiết lập mật khẩu">
+
+            <SwitchPreferenceCompat
+                app:key="enable_password_application"
+                app:title="Mật khẩu ứng dụng" />
+
+            <EditTextPreference
+                app:dependency="enable_password_application"
+                app:key="password_application"
+                app:title="Thiết lập mật khẩu"
+                />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="about_preferences"
+            app:title="Giới thiệu">
+
+            <PreferenceScreen
+                android:layout="@layout/fragment_settings_about"
+                />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+</PreferenceScreen>

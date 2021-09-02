@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/navToDoList"
+            android:title="To Do List"
+            android:icon="@drawable/ic_nav_todolist"/>
+        <item android:id="@+id/navSetting"
+            android:title="Settings"
+            android:icon="@drawable/ic_nav_setting"/>
+        <item
+            android:id="@+id/navFilters"
+            android:icon="@drawable/ic_nav_filter"
+            android:title="Filters" />
+        <item
+            android:id="@+id/navChart"
+            android:icon="@drawable/ic_nav_chart"
+            android:title="Chart" />
+        <item android:id="@+id/navCalendar"
+            android:title="Calendar"
+            android:icon="@drawable/ic_nav_calendar"/>
+        <item android:id="@+id/navTimer"
+            android:title="Timer"
+            android:icon="@drawable/ic_timer"/>
+        <item android:id="@+id/navNews"
+            android:title="News"
+            android:icon="@drawable/ic_nav_news"/>
+    </group>
+</menu>

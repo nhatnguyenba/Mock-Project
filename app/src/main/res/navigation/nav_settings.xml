@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_settings"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.test.setting.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_settingsApplicationFragment"
+            app:destination="@id/settingsApplicationFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_categorySettingsFragment"
+            app:destination="@id/categorySettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsApplicationFragment"
+        android:name="com.example.test.setting.fragment.SettingsApplicationFragment"
+        android:label="SettingsApplicationFragment"
+        tools:layout="@layout/fragment_settings_application"
+        />
+    <fragment
+        android:id="@+id/categorySettingsFragment"
+        android:name="com.example.test.setting.fragment.CategorySettingsFragment"
+        android:label="CategorySettingsFragment"
+        tools:layout="@layout/fragment_settings_category"
+        />
+</navigation>

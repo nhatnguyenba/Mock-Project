@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/category_manager_item"
+        android:title="Quản lý phân loại"
+        android:icon="@drawable/ic_list"
+        />
+
+    <item android:id="@+id/setting_manager_item"
+        android:title="Thiết lập ứng dụng"
+        android:icon="@drawable/ic_settings"
+        />
+
+</menu>
